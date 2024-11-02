@@ -1,14 +1,8 @@
 import * as React from "react"
-
-
-
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Product } from "@/lib/types"
 import ProductCard from "./product-card"

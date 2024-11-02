@@ -1,5 +1,4 @@
 import { BesstSellingProducts } from "@/components/best-selling";
-import { BrowseByCategories } from "@/components/by-categories";
 import { FlashSale } from "@/components/flash-sale";
 import SideBar from "@/components/sidebar";
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,6 @@ import Link from "next/link";
 
 export default async function Home() {
   const {data:products} = await api.get('/products')
-  const {data: categories} = await api.get('/categories')
 
   return (
     <div className="">
@@ -40,9 +38,6 @@ export default async function Home() {
         </div>
 
         <SectionHeading title="Categories"/>
-        {/* <div>
-          <BrowseByCategories categories={categories} />
-        </div> */}
 
         <div className="my-4">
         <SectionHeading title="This Month"/>
