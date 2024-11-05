@@ -26,6 +26,9 @@ Or you might need to install alongside peer dependencies:
 npm install --legacy-peer-deps
 ```
 
+Create a .env file at the root of the project and add api base url key:
+API_BASE_URL=your-api-base-url
+
 Once dependencies are successfully installed, run the development server
 ```bash
 npm run dev
